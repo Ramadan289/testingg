@@ -1,0 +1,36 @@
+.container{
+  display: grid;
+  grid-auto-rows: minmax(200px,auto);
+  grid-template-areas: 
+  "head head head head head"
+  "sl sl nav nav nav"
+  "sl sl cont cont cont"
+  "sl sl cont cont cont"
+  "sl sl cont cont cont"
+  "foot foot foot foot foot"
+  
+  ;
+  grid-gap: 10px;
+}
+
+.box{
+  background-color: gold;
+  color: black;
+  text-align: center;
+}
+
+.head{
+  grid-area: head;
+}
+.nav{
+  grid-area: nav;
+}
+.sidelef{
+  grid-area: sl;
+}
+.content{
+  grid-area: cont;
+}
+.footer{
+  grid-area: foot;
+}
